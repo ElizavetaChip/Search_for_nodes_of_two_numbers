@@ -41,5 +41,8 @@ unsigned int greatest_common_divisor(unsigned int a, unsigned int b)
 
 int int_part_of_fraction(int numerator, int denominator)
 {
+    //Если знаменатель равен 0 - вернуть -1 (ошибка)
+    //Иначе вернуть результат деления без остатка и без округления
+  
     return 0;
 }
