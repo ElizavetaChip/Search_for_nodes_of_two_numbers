@@ -110,9 +110,11 @@ int main()
     if (!dataCorrect) //Если данные некорректны (есть недопустимые символы хотя бы в одном из чисел) - завершить программу
         return 1;
     
-
     //Перевод числа из римской системы счисления в арабскую
-    
+    int num1 = roman_to_int(number1);
+    int num2 = roman_to_int(number2);
+    int num3 = roman_to_int(number3);
+    int num4 = roman_to_int(number4);
 
     //Проверка того, что числитель должен быть больше или равен знаменателю
     //Если данные некорректны (числитель меньше знаменателя) - завершить программу
@@ -121,12 +123,16 @@ int main()
        
 
     //Найти результаты деления двух дробей
-   
+    int res1 = int_part_of_fraction(num1, num2);
+    int res2 = int_part_of_fraction(num3, num4);
 
     //Найти наибольший общий делитель полученных результатов
-
+    int result;
+    result = greatest_common_divisor(res1, res2);
 
     //Вывод результата
+    printf("%d\n", result);
+    return 0;
  
 }
 
